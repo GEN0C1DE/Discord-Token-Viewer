@@ -1,5 +1,5 @@
 # Discord-Token-Viewer
-Schemaposse, a Discord Token Grabber from multiple paths on your computer. Easy to use, and ready to view within seconds! 
+Schemaposse, a Discord Token Viewer from multiple paths on your computer. Easy to use, and ready to view within seconds! 
 
 # Node.JS
 This is a Node.js project, you must install it before using this project. Installation link is below!
